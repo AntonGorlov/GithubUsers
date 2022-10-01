@@ -12,6 +12,5 @@ class ApplicationCoordinatorDummy: AnyCoordinator {
     
     override func start() {
         
-        
     }
 }

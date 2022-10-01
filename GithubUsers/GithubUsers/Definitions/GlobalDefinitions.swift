@@ -6,3 +6,5 @@
 //
 
 import Foundation
+
+let SUBCLASSES_IMPLEMENTATION_REQUIRED = "Must be implemented in subclases"

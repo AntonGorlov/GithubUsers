@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+/// Contract of describing mediator wich manages view controllers presentation flow
+protocol ICoordinator {
+    
+    /// Starts of flow and presents initial flow view contorller
+    func start()
+}
