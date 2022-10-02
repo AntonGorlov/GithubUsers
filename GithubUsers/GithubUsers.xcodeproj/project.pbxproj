@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32AEFE228E96E2900690C82 /* BackendAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A32AEFE128E96E2900690C82 /* BackendAPI */; };
+		A32AEFE428E9756700690C82 /* BackendAPI in Resources */ = {isa = PBXBuildFile; fileRef = A32AEFE328E9756700690C82 /* BackendAPI */; };
 		A33FA93428E847CB0041FE94 /* ApplicationCoordinatorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA93328E847CB0041FE94 /* ApplicationCoordinatorTest.swift */; };
 		A33FA93728E84D0F0041FE94 /* AnyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA93628E84D0F0041FE94 /* AnyCoordinator.swift */; };
 		A33FA93928E84E110041FE94 /* ICoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33FA93828E84E110041FE94 /* ICoordinator.swift */; };
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A32AEFE328E9756700690C82 /* BackendAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = BackendAPI; sourceTree = "<group>"; };
 		A33FA93328E847CB0041FE94 /* ApplicationCoordinatorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinatorTest.swift; sourceTree = "<group>"; };
 		A33FA93628E84D0F0041FE94 /* AnyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyCoordinator.swift; sourceTree = "<group>"; };
 		A33FA93828E84E110041FE94 /* ICoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICoordinator.swift; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32AEFE228E96E2900690C82 /* BackendAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +92,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A32AEFE028E96E2900690C82 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A33FA93528E84CF30041FE94 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,10 +135,12 @@
 		A37E9C6F28E84390008980E9 = {
 			isa = PBXGroup;
 			children = (
+				A32AEFE328E9756700690C82 /* BackendAPI */,
 				A37E9C7A28E84390008980E9 /* GithubUsers */,
 				A37E9C9128E84391008980E9 /* GithubUsersTests */,
 				A37E9C9B28E84391008980E9 /* GithubUsersUITests */,
 				A37E9C7928E84390008980E9 /* Products */,
+				A32AEFE028E96E2900690C82 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,6 +206,9 @@
 			dependencies = (
 			);
 			name = GithubUsers;
+			packageProductDependencies = (
+				A32AEFE128E96E2900690C82 /* BackendAPI */,
+			);
 			productName = GithubUsers;
 			productReference = A37E9C7828E84390008980E9 /* GithubUsers.app */;
 			productType = "com.apple.product-type.application";
@@ -281,6 +297,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A32AEFE428E9756700690C82 /* BackendAPI in Resources */,
 				A37E9C8828E84391008980E9 /* LaunchScreen.storyboard in Resources */,
 				A37E9C8528E84391008980E9 /* Assets.xcassets in Resources */,
 				A37E9C8328E84390008980E9 /* Main.storyboard in Resources */,
@@ -658,6 +675,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A32AEFE128E96E2900690C82 /* BackendAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = BackendAPI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A37E9C7028E84390008980E9 /* Project object */;
 }
