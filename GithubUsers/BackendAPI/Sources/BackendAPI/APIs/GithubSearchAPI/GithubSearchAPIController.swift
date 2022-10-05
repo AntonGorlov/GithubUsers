@@ -7,7 +7,7 @@
 
 import Foundation
 
-class GithubSearchAPIController: AnyAPIContoller, IGithubSearchAPI {
+public class GithubSearchAPIController: AnyAPIContoller, IGithubSearchAPI {
     
     public var requestBuilder: IGithubSearchAPIRequestBuilder = GithubSearchAPIRequestsFactory()
     
