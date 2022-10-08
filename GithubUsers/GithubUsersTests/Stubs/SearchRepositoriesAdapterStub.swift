@@ -18,10 +18,10 @@ class SearchRepositoriesAdapterStub: ISearchRepositoriesAdapter {
     
     func getSearchRepositoriesWithSortAndStars(requestData: SearchRepositoryRequestData) -> GetSearchRepositoriesResult {
         
-        let d = try! JSONDecoder().decode(SearchRepositoriesResponseData.self,
+        let responseData = try! JSONDecoder().decode(SearchRepositoriesResponseData.self,
                                           from: self.replacementJSON)
         
-        return Just((d))
+        return Just((responseData))
             .flatMap { response -> GetSearchRepositoriesResult in
                 
                 return Future { promise in
